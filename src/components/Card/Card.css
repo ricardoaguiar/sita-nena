@@ -1,0 +1,25 @@
+.card-component {
+  background-color: #77b800; /* Green */
+  border: none;
+  color: white;
+  /* padding: 20px;*/
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 19px 26.5px;
+  margin-bottom: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 82pt;
+  height: 82pt;
+  /*align-items: center;
+  justify-content: center;*/
+}
+.easy-hard-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.orange-b {
+  color: #f77521;
+}
