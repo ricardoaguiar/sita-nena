@@ -13,7 +13,7 @@ import { RecipePage } from './containers/RecipePage/RecipePage.component';
 import { VoucherPage } from './containers/VoucherPage/VoucherPage.component';
 // import  Game  from './components/Game/Game.js';
 import { ErrorPage } from './containers/404Page/404Page.component';
-import Timer from './components/Timer/Timer.js';
+// import Timer from './components/Timer/Timer.js';
 
 function App() {
 
