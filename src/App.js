@@ -18,7 +18,6 @@ import { ErrorPage } from './containers/404Page/404Page.component';
 function App() {
 
   return (
-    <React.StrictMode>
       <Router>
         <Switch>
           <Route exact path="/">
@@ -45,7 +44,7 @@ function App() {
           <Redirect to="/404-page" />
         </Switch>
       </Router>
-      </React.StrictMode>
+  
   );
 }
 export default App;
