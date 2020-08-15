@@ -33,15 +33,15 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx'],
   },
-  devServer: {
-    publicPath: '/',
-    historyApiFallback: true,
-    port: parseInt(process.env.CLIENT_PORT, 10),
-    open: process.env.OPEN_BROWSER === 'true',
-    proxy: {
-      '/api': `http://localhost:${process.env.API_PORT}`,
-    },
-  },
+  // devServer: {
+  //   publicPath: '/',
+  //   historyApiFallback: true,
+  //   port: parseInt(process.env.CLIENT_PORT, 10),
+  //   open: process.env.OPEN_BROWSER === 'true',
+  //   proxy: {
+  //     '/api': `http://localhost:${process.env.API_PORT}`,
+  //   },
+  // },
   node: {
     net: 'empty',
     tls: 'empty',

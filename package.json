@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "A memory game application built with React.",
-  "main": "/src/index.js",
+  "main": "index.js",
   "engines": {
     "node": "12.9.1"
   },
