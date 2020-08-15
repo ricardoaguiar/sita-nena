@@ -1,12 +1,12 @@
 
-// const path = require('path');
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const Dotenv = require('dotenv-webpack');
 
 const outputDirectory = 'dist';
 
 module.exports = {
-  entry: ['babel-polyfill', './src/client/index.js'],
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
     path: path.join(__dirname, outputDirectory),
     filename: 'bundle.js',
@@ -33,15 +33,15 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx'],
   },
-  // devServer: {
-  //   publicPath: '/',
-  //   historyApiFallback: true,
-  //   port: parseInt(process.env.CLIENT_PORT, 10),
-  //   open: process.env.OPEN_BROWSER === 'true',
-  //   proxy: {
-  //     '/api': `http://localhost:${process.env.API_PORT}`,
-  //   },
-  // },
+  devServer: {
+    publicPath: '/',
+    historyApiFallback: true,
+    port: parseInt(process.env.CLIENT_PORT, 10),
+    open: process.env.OPEN_BROWSER === 'true',
+    proxy: {
+      '/api': `http://localhost:${process.env.API_PORT}`,
+    },
+  },
   node: {
     net: 'empty',
     tls: 'empty',
@@ -51,7 +51,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       favicon: './public/favicon.ico',
-      ...process.env,
+      // ...process.env,
     }),
     // new Dotenv({
     //   path: './.env',

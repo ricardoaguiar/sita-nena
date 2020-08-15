@@ -16,7 +16,6 @@ import { ErrorPage } from './containers/404Page/404Page.component';
 // import Timer from './components/Timer/Timer.js';
 
 function App() {
-
   return (
       <Router>
         <Switch>
